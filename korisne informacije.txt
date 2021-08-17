@@ -1,0 +1,14 @@
+
+
+RESURSI:
+https://heizenrader.com/how-to-set-up-unitys-video-player-for-2d-ui-viewing/
+https://answers.unity.com/questions/674367/how-to-use-this-gif-in-animation.html
+https://forum.unity.com/threads/released-animated-gif-player.459855/
+https://stackoverflow.com/questions/37135353/how-to-add-gif-animation-in-unity-scene-does-unity-support-animated-gifs
+
+USPJEŠAN GIF-TO-MP4 CONVERTER:
+https://convertio.co/gif-mp4/
+
+POTENCIJALNI DRUGI GIF TO MP4 CONVERTERI:
+https://ezgif.com/gif-to-mp4
+
