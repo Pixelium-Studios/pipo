@@ -54,7 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PiPo.cs" />
-    <Compile Include="Assets\Scripts\Opening Screen Scripts\OpeningAnimationStarter.cs" />
+    <Compile Include="Assets\Scripts\Main Menu\ControlScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
