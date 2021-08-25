@@ -5,7 +5,11 @@ using UnityEngine.UI;
 public class ControlScript : MonoBehaviour
 {
     [SerializeField]
-    private GameObject openingAnimationPanel;
+    private GameObject video_panel_loading;
+    [SerializeField]
+    private GameObject video_panel_start_menu;
+
+
     [SerializeField]
     private VideoClip startMenuClip;
     [SerializeField]
@@ -30,8 +34,9 @@ public class ControlScript : MonoBehaviour
 
     void StartNewClip(VideoPlayer myVidPlayer)
     {
-        myVideoPlayer.clip = startMenuClip;
-        myVideoPlayer.isLooping = true;
+        video_panel_loading.SetActive(false);
+        video_panel_start_menu.SetActive(true);
+        //myVideoPlayer.loopPointReached -= StartNewClip;
     }
 
    
