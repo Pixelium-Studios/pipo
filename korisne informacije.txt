@@ -1,5 +1,3 @@
-
-
 RESURSI:
 https://heizenrader.com/how-to-set-up-unitys-video-player-for-2d-ui-viewing/
 https://answers.unity.com/questions/674367/how-to-use-this-gif-in-animation.html

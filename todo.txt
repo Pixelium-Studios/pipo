@@ -1,0 +1,4 @@
+* sredit to kaj se na početku playanja Loading videoclipa pokazuje neki frame prije "pravog početka" playanja
+* popravit framefreezing kod looping-a Main Menu videa
+* vjerojatno restrukturirat tehnologiju playanja Menu GIFova 
+(umjesto mp4 konverzija, pretvoriti GIF u frame-ove i onda programski playati ili nesto slicno)
