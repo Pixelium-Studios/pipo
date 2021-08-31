@@ -18,23 +18,21 @@ public class ControlScript : MonoBehaviour
     private VideoPlayer start_menu_video_player;
     [SerializeField]
     private Button startButton;
+
+    private RawImage video_panel_loading_rawImage;
     
     // Start is called before the first frame update
     void Start()
     {
         loading_video_player.loopPointReached += StartNewClip;
-
-        // do delayed start ( zbog onih vizualnih problema pri Play-anju Unity programa )
-
-        // izgleda da nije dovoljno staviti delay pa onda SetActive na cijeli panel, i dalje "freeza" neki frame iz videa kad se aktivira panel pa onda krene playati normalno
-        // mozda playati video a imati "deaktiviran" Image, pa "pecati" tajming da se aktivira taman kad se video pocne "normalno playati"
+        video_panel_loading_rawImage = video_panel_loading.GetComponent<RawImage>();
+        loading_video_player.Play();                
         Invoke("InvokedFunction", initialPlayDelay);    
     }
 
     void InvokedFunction()
     {
-        video_panel_loading.SetActive(true);
-        loading_video_player.Play();
+        video_panel_loading_rawImage.enabled = true;        
     }
 
     void StartNewClip(VideoPlayer myVidPlayer)
