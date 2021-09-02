@@ -291,8 +291,8 @@ VideoPlayer:
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
-  m_Looping: 1
+  m_SkipOnDrop: 0
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -366,7 +366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 96, y: -30}
+  m_AnchoredPosition: {x: 39, y: -49}
   m_SizeDelta: {x: 232, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455716223
@@ -638,7 +638,7 @@ VideoPlayer:
   m_RenderMode: 2
   m_AspectRatio: 2
   m_DataSource: 0
-  m_PlaybackSpeed: 1
+  m_PlaybackSpeed: 10
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []

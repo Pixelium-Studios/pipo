@@ -19,6 +19,8 @@ public class ControlScript : MonoBehaviour
     [SerializeField]
     private Button startButton;
 
+    //private long startMenuLastFrame = 
+
     private RawImage video_panel_loading_rawImage;
     
     // Start is called before the first frame update
@@ -27,7 +29,10 @@ public class ControlScript : MonoBehaviour
         loading_video_player.loopPointReached += StartNewClip;
         video_panel_loading_rawImage = video_panel_loading.GetComponent<RawImage>();
         loading_video_player.Play();                
-        Invoke("InvokedFunction", initialPlayDelay);    
+        Invoke("InvokedFunction", initialPlayDelay);
+
+        start_menu_video_player.sendFrameReadyEvents = true;
+        start_menu_video_player.frameReady += CheckForLastFrame;
     }
 
     void InvokedFunction()
@@ -46,6 +51,13 @@ public class ControlScript : MonoBehaviour
         start_menu_video_player.Play();
 
         //myVideoPlayer.loopPointReached -= StartNewClip;
+    }
+
+    void CheckForLastFrame(VideoPlayer videoPlayer, long frame)
+    {
+        Debug.Log("vidPlayer.frame = " + videoPlayer.frame + ", frame = " + frame);
+        if (frame == 15)
+            videoPlayer.frame = 1;
     }
 
     public void OnStartButtonClick()
