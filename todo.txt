@@ -1,3 +1,4 @@
+*promijenit tehnologiju pokretanja GIF fajlova iz mp4 konverzije u Sprite animaciju sa .gif slikama
 * sredit to kaj se na početku playanja Loading videoclipa pokazuje neki frame prije "pravog početka" playanja
 * popravit framefreezing kod looping-a Main Menu videa
 * vjerojatno restrukturirat tehnologiju playanja Menu GIFova 
